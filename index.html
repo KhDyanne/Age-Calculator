@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+
+      <div class="date_input">
+        <div class="input">
+          <h3>Day</h3>
+          <input type="text" placeholder="DD" id="userDate">
+          <span id="errorDate">Must be a valid day</span>
+        </div>
+        <div class="input">
+          <h3>Month</h3>
+          <input type="text" placeholder="MM" id="userMonth">
+          <span id="errorMonth">Must be a valid month</span>
+        </div>
+        <div class="input">
+          <h3>Year</h3>
+          <input type="text" placeholder="YYYY" id="userYear">
+          <span id="errorYear">Must be a valid year</span>
+        </div>
+      </div>
+
+      <div class="arrow_line">
+        <hr>
+        <svg onclick="handleClick()" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 46 44">
+          <g fill="none" stroke="#fff" stroke-width="2">
+            <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+          </g>
+        </svg>  
+      </div>
+
+      <div class="date_output">
+        <h1><span class="dash" id="year">--</span>years</h1>
+        <h1><span class="dash" id="month">--</span>months</h1>
+        <h1><span class="dash" id="day">--</span>days</h1>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Coded by <a href="https://www.frontendmentor.io/profile/KhDyanne">Diana Khajieva</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

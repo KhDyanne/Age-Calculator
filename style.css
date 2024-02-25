@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,100;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #EFECEC;
+    margin-bottom: 20px;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 650px; 
+    height: 500px;
+    background-color: white;
+    border-radius: 20px 20px 90px 20px;
+    padding: 2rem 5%;
+}
+.date_input{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-left: 20px;
+}
+h3{
+    font-size: 18px;
+    margin-bottom: 7px;
+    color: rgb(66, 63, 63);
+}
+#errorDate, #errorMonth, #errorYear{
+    display: none;
+    font-size: 12px;
+    margin-top: 5px;
+    color: red;
+}
+input{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(214, 211, 211);
+    border-radius: 5px;
+    padding-left: 12px;
+    width: 124px;
+    height: 45px;
+    font-weight: bold;
+}
+input:focus{
+   border: 1px solid blueviolet;
+   outline: 1.2px solid blueviolet;
+}
+.arrow_line{
+    display: flex;
+    position:relative;
+}
+.arrow_line hr{
+    flex-grow: 1;
+    margin: 40px 0 0 10px;
+    border-style: none;
+    border-top: 1px solid rgb(214, 211, 211);
+}
+.arrow_line svg{
+    background-color: blueviolet;
+    border-radius: 50%;
+    padding: 7px;
+    margin:10px 5px 0 0;
+}
+.arrow_line svg:hover{
+    background-color: rgb(73, 9, 104);
+}
+
+.date_output{
+    font-size: 30px;
+    font-style: italic;
+}
+.dash{
+    color: blueviolet;
+    margin-right: 10px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (max-width: 680px) {
+    .box {
+        margin: 2rem 3%;
+    }
+    .box {
+        width: 400px;
+        height: 550px;
+    }
+    input {
+        width: 60px;
+        height: 30px;
+    }
+    .arrow_line {
+        display: block;
+    }
+    .date_output{
+        font-size: 28px;
+    }
+
+    .arrow_line svg {
+        margin-top: -25px;
+        margin-left: 137px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
